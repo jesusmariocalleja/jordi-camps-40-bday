@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Happy birthday Mr. Fields</title>
+    <base href="/">
+    <!-- <meta name="theme-color" content="#46c1f0" /> -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{
+           color:  #555;
+
+        }
+        #main-bg, 
+        #main-container{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        #main-bg{
+            background-image: url('https://media.rainpos.com/5294/lord_of_the_rings_ll_logo_taupe_non_digital.jpg'); 
+            background-size: cover;
+            background-position: center center;
+            filter: brightness(0.2) invert(1);
+            -webkit-filter: brightness(0.2) invert(1);
+            z-index: 1;
+        }
+        #main-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 2
+        }
+
+        #main-content{
+            text-align: center;
+        }
+
+        #title{
+            font-family: 'Parisienne', cursive;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        #avatar{
+            display: inline-block;
+            position: relative;
+            background-image: url('https://media-exp1.licdn.com/dms/image/C4D03AQEWDXTPDdIVDQ/profile-displayphoto-shrink_200_200/0?e=1591228800&v=beta&t=MMz4blwQhpZ18DxBEfd94UcX4LVljgGE0EzJKo9hrRY'); 
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 70vw;
+            height: 70vw;
+            max-width: 280px;
+            max-height: 280px;
+            border: 10px solid #555;
+        }
+
+        #stamp-container{
+
+            position: absolute;
+            width: 100%;
+            bottom: -15px;
+            text-align: center;
+        }
+
+        #stamp{
+            text-transform: uppercase;
+            font-family: "impact";
+            font-size: 40px;
+            padding: 0.5rem 1rem;
+            background-color: #e74c3c;
+            color: #fff;
+            text-shadow: 2px 3px 4px rgba(0,0,0,0.4);
+            box-shadow: 2px 4px 5px 2px rgba(0,0,0,0.4);
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+            animation-delay:1.5s;
+            -webkit-animation-delay:1.5s;
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            opacity: 0;
+            -webkit-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+        }
+
+        @-webkit-keyframes pulse{
+            0%{
+                opacity: 0;
+            }
+            10%{
+                opacity:.50;
+                transform-origin: 50% 50%;
+                transform: rotate(-2deg) scale(5);
+                transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+            }
+            100%{
+                opacity:1;
+                transform: rotate(-12deg) scale(1);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main-bg"></div>
+    <div id="main-container">
+        <div id="main-content">        
+            <h1 id="title">Feliços 40 tacos</h1>
+            <div id="avatar">
+            <div id="stamp-container">
+                <div id="stamp">puretilla</div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
